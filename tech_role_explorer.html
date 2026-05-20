@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Role Explorer</title>
+    <script src="tech_role_explorer.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20;
+            padding: 80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+             background-image:url('https://t3.ftcdn.net/jpg/06/16/10/26/240_F_616102610_gLBmCCoVhJ33uqIT8m6jJw6BZQ60XXhM.jpg'); 
+            background-repeat:no-repeat;
+            background-size:cover;
+        }
+
+        .header-container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #header {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        
+        #header::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -10px; /* Half of the arrow height */
+            border-width: 10px;
+            border-style: solid;
+            border-color: transparent transparent transparent #333; /* Adjusted border-color */
+            transition: border-color 0.3s ease;
+        }
+        
+        .content-container {
+            /* Additional styles for the content container */
+            padding: 20px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 10px; /* Adjust the margin as needed */
+        }
+        
+        
+
+        #container {
+            text-align: center;
+            background-color: teal;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            display:flex;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #results {
+            margin-top: 20px;
+        }
+
+        #images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        #images img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <h1 id="header">Tech Role Explorer!!!</h1>
+        <div class="content-container">
+        <label for="techSelection">Select a Tech Role:</label>
+        <select id="techSelection">
+            <option value="blockchain">Blockchain</option>
+            <option value="ai">AI</option>
+            <option value="analytics">Analytics</option>
+            <option value="web">Web Development</option>
+            <option value="robotics">Robotics</option>
+            <option value="devops">DevOps</option>
+            <option value="cloud computing">Cloud Computing</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="big data">Big data</option>
+            <option value="ml">ML</option>
+            <option value="business intelligence">Business Intelligence</option>
+        </select>
+        <button onclick="searchTechRole()">Search</button>
+
+        <div id="results"></div>
+    </div>
+
+    <div id="images">
+        <img src="https://img.freepik.com/free-photo/young-woman-working-office-with-laptop-headphones-white-wall-customer-service-call-center_231208-8602.jpg" alt="Image 1">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPm2WBRO_4Dj8SkVSegVDPFQJ-4uzpdZNlSA&usqp=CAU" alt="Image 2">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_FU2nrLXQDg2lRiOOMVGhlwrRkKOrDcw_Q&usqp=CAU" alt="Image 3">
+    </div>
+
+    <script>
+        function searchTechRole() {
+            // Get the selected option value
+            var selectedRole = document.getElementById("techSelection").value.toLowerCase();
+
+            // Check the selected role and redirect accordingly
+            switch (selectedRole) {
+                case "ai":
+                    window.location.href = "AIML(home).html";
+                    break;
+                case "web":
+                    window.location.href = "WEB(home).html";
+                    break;
+                case "blockchain":
+                    window.location.href = "BC(home).html";
+                    break;
+                case "devops":
+                    window.location.href = "DEVOPS(home).html";
+                    break;
+                case "cloud computing":
+                    window.location.href = "Analytics(home).html";
+                    break;
+                case "ml":
+                    window.location.href = "ML(home).html";
+                    break;
+                case "cybersecurity":
+                    window.location.href = "Cybersecurity(home).html";
+                    break;
+                case "big data":
+                    window.location.href = "Big_data(home).html";
+                    break;
+                case "business intelligence":
+                    window.location.href = "Bus(home).html";
+                    break;
+                case "analytics":
+                    window.location.href = "Anal(home).html";
+                    break;
+                case "robotics":
+                    window.location.href = "Robotics(home).html";
+                    break;
+                default:
+                    // Display a message for unknown selections
+                    document.getElementById("results").innerHTML = "<p style='color: red;'>Invalid selection.</p>";
+            }
+        }
+    </script>
+</body>
+
+</html>

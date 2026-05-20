@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Core Concepts of AIML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            color: white;
+            background-image:url('https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-49019.jpg');
+            background-size: cover; /* Set background size to cover the entire container */
+            background-repeat: no-repeat;
+        }
+        .container 
+        {
+         margin: 20px auto;
+         padding: 20px;
+         border: 1px solid #ddd; /* Add a border for a box-like appearance */
+         border-radius: 10px; /* Add rounded corners */
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+     
+        }
+        h1, p {
+            text-align: left;
+        }
+        .image-container {
+            display: flex;
+            animation: scrollImages 10s linear infinite alternate;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 300px;
+            height: 200px;
+            animation: scrollImages 20s linear infinite;
+        }
+        .image-container {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 300px; /* Set the width of your container */
+            height: 200px; /* Set the height of your container */
+            overflow: hidden;
+        }
+        /* Style the footer */
+         footer {
+          background-color: #2F4F4F;
+          color:indianred;
+          padding: 20px 0;
+           text-align: center;
+           }
+
+         .footer-content {
+            max-width: 1200px;
+             margin: 0 auto;
+                }
+
+          h3 {
+             color:yellow;
+            }
+
+        .socials {
+          list-style: none;
+         padding: 0;
+         margin-top: 10px;
+        }
+       .socials li {
+         display: inline-block;
+         margin-right: 10px;
+      }
+
+     .socials a {
+        color: #fff;
+        text-decoration: none;
+         font-size: 20px;
+     }
+
+        /* Style the social icons */
+         .socials i {
+            transition: color 0.3s ease-in-out;
+          }
+
+        .socials i:hover {
+          color:#800000;
+         }
+         table {
+            width: 100%;
+            background-color:#2F4F4F;
+            text-align: center;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        /* Updated styling for th elements */
+        th {
+            flex: 1; /* Equal width for each th to distribute space evenly */
+            padding: 15px;
+        }
+        
+        th a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            display: block; /* Ensure each link takes up the full width of the th */
+        }
+        
+        /* Flexbox styles for the table row */
+        tr {
+            display: flex;
+            justify-content: space-between;
+            width: 100%; /* Ensure the row takes up the full width */
+        }
+        th a:hover {
+            background-color: #f0a4a4;
+        }
+    
+        th a.active {
+            background-color: #b3b5b4;
+            color: rgb(18, 17, 17);
+        }
+
+    </style>
+</head>
+<body>
+</div>
+<table>
+<tr>
+    <th><a href="ML.html">Introduction</a></th>
+    <th><a href="Core_Concepts(ML).html">Core Concepts</a></th>
+    <th><a href="Career_Opportunities(ML).html">Career Opportunities</a></th>
+    <th><a href="Recent_Developments(ML).html">Recent Developments</a></th>
+    <th><a href="Roadmap(ML).html">Roadmap</a></th>
+</tr>
+</table>
+    <div class="container">
+       
+    <h1>Core Concepts of Machine Learning</h1>
+
+    <h2>Dataset:</h2>
+    <p>Think of it as a collection of examples used to train and test the model. Each example has input features (like <code>age</code>, <code>salary</code>) and a target output (what we want to predict).</p>
+
+    <h2>Training:</h2>
+    <p>The process of teaching the model using the training dataset. The model learns patterns and relationships in the data.</p>
+
+    <h2>Model:</h2>
+    <p>A representation of the patterns learned from the training data. It can make predictions on new, unseen data.</p>
+
+    <h2>Features:</h2>
+    <p>These are the input variables or attributes of the data. For example, in predicting house prices, features could include the number of bedrooms, location, etc.</p>
+
+    <h2>Labels:</h2>
+    <p>The target output we want to predict. For instance, in a spam detection model, labels are whether an email is spam or not.</p>
+
+    <h2>Testing:</h2>
+    <p>Evaluating the model's performance on a separate dataset not used during training. Helps ensure the model generalizes well to new, unseen data.</p>
+
+    <h2>Prediction:</h2>
+    <p>Using the trained model to make forecasts or classifications on new, unseen data. For example, predicting tomorrow's weather based on historical data.</p>
+
+    <h2>Evaluation:</h2>
+    <p>Assessing how well the model performs using metrics like accuracy, precision, recall, etc. It helps understand the model's strengths and weaknesses.</p>
+
+    <h2>Overfitting:</h2>
+    <p>When a model learns the training data too well, including noise and outliers. It may perform poorly on new data because it memorized the training examples.</p>
+
+    <h2>Hyperparameters:</h2>
+    <p>Parameters that are set before training and control the learning process. Examples include the learning rate, number of hidden layers, etc.</p>
+
+    <h2>Supervised Learning:</h2>
+    <p>The model is trained on labeled data, where inputs and corresponding outputs are provided. It learns to map inputs to outputs.</p>
+
+    <h2>Unsupervised Learning:</h2>
+    <p>The model is given unlabeled data and must find patterns or structures on its own. Clustering and dimensionality reduction are common tasks.</p>
+
+    <h2>Regression:</h2>
+    <p>A type of supervised learning where the model predicts continuous values (like house prices).</p>
+
+    <h2>Classification:</h2>
+    <p>Another type of supervised learning where the model predicts discrete labels or categories. For example, spam or not spam.</p>
+
+    <h2>Neural Networks:</h2>
+    <p>Models inspired by the structure of the human brain, composed of layers of interconnected nodes (neurons). Used in deep learning for complex tasks like image recognition.</p>
+
+
+</div>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <h3>TECH ROLE EXPLORER</h3>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var currentLocation = window.location.pathname;
+        var links = document.querySelectorAll('th a');
+      
+        for (var i = 0; i < links.length; i++) {
+            if (links[i].pathname === currentLocation) {
+                links[i].classList.add('active');
+            }
+        }
+      
+      </script>
+
+</body>
+
+</html>
+
+

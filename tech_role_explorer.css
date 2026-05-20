@@ -1,0 +1,33 @@
+/* body{
+    background-color: #0A2344;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.search-container {
+    text-align: center;
+    background-color: #ccc;
+}
+
+input {
+    padding: 8px;
+    background-color: #ccc;
+    border-width: 50cm,20cm;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius:5px;
+    border-width: 50cm,20cm;
+}
+img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+} */
